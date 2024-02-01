@@ -82,7 +82,7 @@
 let count = 0
 let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
-
+console.log(saveEl)
 function increment() {
     count += 1
     countEl.textContent = count
@@ -90,9 +90,24 @@ function increment() {
 
 function save() {
     let countStr = count + " - "
-    saveEl.textContenttStr
+
+    saveEl.textContent +=countStr
+  //making the value 0 again if you click save
     countEl.textContent = 0
+   //set the count back to 0
     count = 0
+
+    console.log(count)
 }
 
 console.log("Let's count people on the subway!")
+
+// concept learned
+// script EventTargetvariables
+// SVGAnimatedNumberListstrings
+// console.log()
+// functions
+// the DOM
+// getElementById
+// innerText
+// textContent
